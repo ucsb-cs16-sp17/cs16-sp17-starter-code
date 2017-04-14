@@ -45,6 +45,16 @@ int main(int argc, char *argv[])
   // Now read the rest of the lines
   // Start by trying to read the first line
   
+  getline(ifs,thisLine);
+  while (  !ifs.eof() ) {
+      // If we get here, it means we successfully read one line
+      // So do something with thisLine
+    
+    if (thisLine=="duck")
+      duckCount ++;
+
+    getline(ifs,thisLine);
+  }
 
   // If we get here, we reached the end of the file.
   // Print number of ducks we read and the name of the file
