@@ -32,16 +32,16 @@ void deleteNodeIteratively(LinkedList *list, int value);
 //calling the helper function deleteNodeRecursivelyHelper
 void deleteNodeRecursively(LinkedList *list, int value);
 
-//Precondition: A pointer to head of the LinkedList
+//Precondition: A pointer to the first node in the LinkedList
 //Postcondition: Delete all occurrences of nodes with the given value
 //using a recursive solution and returns the new "head" of the linked-list
 Node* deleteNodeRecursivelyHelper(Node *head, int value);
 
 //Precondition: A pointer to a LinkedList object created on the heap that
-//contains all nodes in sorted (ascending order). The list may be empty. 
+//contains all nodes in sorted (ascending) order. The list may be empty. 
 //The list may have multiple copies of the same element
 //Postcondition: Insert a node with the given value at the appropriate
 //location in the list, so that the new list also contains nodes in sorted
-//(ascending order). The list may have multiple copies of the same element 
+//(ascending) order. The list may have multiple copies of the same element 
 void insertNodeToSortedList(LinkedList *list, int value);
 #endif //  LINKEDLISTFUNCS_H
