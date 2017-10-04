@@ -30,6 +30,8 @@ int main() {
 		linkedListToString(emptyList),
 		"linkedListToString(emptyList)");
 
+  list = emptyList;
+
   addIntToStartOfList(list,7);
 
   assertEquals( "[7]->null", 

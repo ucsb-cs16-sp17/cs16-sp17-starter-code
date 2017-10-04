@@ -33,6 +33,8 @@ int main() {
   int empty[0]={};
   LinkedList *emptyList = arrayToLinkedList(empty,0);
 
+  list = emptyList;
+
   assertTrue(list->head == NULL,"list->head->data == NULL");
   assertTrue(list->tail == NULL,"list->tail->data == NULL)");
   assertEquals( "null", 
