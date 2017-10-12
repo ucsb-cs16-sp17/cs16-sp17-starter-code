@@ -31,13 +31,13 @@ int main() {
   freeLinkedList(list);
   
   int empty[0]={};
-  LinkedList *emptyList = arrayToLinkedList(empty,0);
+  list = arrayToLinkedList(empty,0);
 
   assertTrue(list->head == NULL,"list->head == NULL");
   assertTrue(list->tail == NULL,"list->tail == NULL)");
   assertEquals( "null", 
-		linkedListToString(emptyList),
-		"linkedListToString(emptyList)");
+		linkedListToString(list),
+		"linkedListToString(list)");
 
   addIntToEndOfList(list,7);
 
@@ -75,7 +75,7 @@ int main() {
   }
 
 
-  freeLinkedList(emptyList);
+  freeLinkedList(list);
   
   return 0;
 }
